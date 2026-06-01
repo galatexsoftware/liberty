@@ -95,6 +95,19 @@ export default function Home() {
             Under-18 players collect virtual investment points. Adults earn redeemable
             points toward real LifeVest rewards.
           </p>
+          <div className="mt-4 grid grid-cols-2 gap-3">
+            <Button asChild variant="gold" size="md">
+              <Link href="/rewards">Rewards</Link>
+            </Button>
+            <Button
+              asChild
+              variant="ghost"
+              size="md"
+              className="text-white hover:bg-white/10"
+            >
+              <Link href="/leaderboard">Leaderboard</Link>
+            </Button>
+          </div>
         </Card>
       </section>
 

@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/*
+  LifeVest Quest — Liberty Kenya brand theme.
+  Identity: deep navy + blue with a white flame mark; gold/teal accents for
+  rewards and progress. Tuned to be playful but professional/trustworthy.
+*/
+
+:root {
+  --background: #f6f8fb;
+  --foreground: #0b1f33;
+
+  --liberty-navy: #002a5c;
+  --liberty-navy-700: #00204a;
+  --liberty-blue: #0067b1;
+  --liberty-blue-300: #4ea3df;
+  --liberty-teal: #00b5c2;
+  --liberty-gold: #f2b600;
+  --liberty-coral: #ff6b5e;
+  --liberty-green: #1faa6b;
+
+  --card: #ffffff;
+  --muted: #5b6b7d;
+  --border: #dbe3ec;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  --color-navy: var(--liberty-navy);
+  --color-navy-700: var(--liberty-navy-700);
+  --color-brand: var(--liberty-blue);
+  --color-brand-300: var(--liberty-blue-300);
+  --color-teal: var(--liberty-teal);
+  --color-gold: var(--liberty-gold);
+  --color-coral: var(--liberty-coral);
+  --color-success: var(--liberty-green);
+
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-xl: 1.25rem;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Brand gradient used across hero/score surfaces. */
+.bg-liberty-gradient {
+  background: linear-gradient(135deg, var(--liberty-navy) 0%, var(--liberty-blue) 100%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}

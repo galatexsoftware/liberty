@@ -55,14 +55,24 @@ export default function Home() {
           <Button asChild variant="gold" size="lg">
             <Link href="/play">Start your quest</Link>
           </Button>
-          <Button
-            asChild
-            variant="ghost"
-            size="md"
-            className="text-white hover:bg-white/10"
-          >
-            <Link href="/learn">How it works</Link>
-          </Button>
+          <div className="flex gap-3">
+            <Button
+              asChild
+              variant="ghost"
+              size="md"
+              className="flex-1 text-white hover:bg-white/10"
+            >
+              <Link href="/mini-games">Mini-games</Link>
+            </Button>
+            <Button
+              asChild
+              variant="ghost"
+              size="md"
+              className="flex-1 text-white hover:bg-white/10"
+            >
+              <Link href="/learn">How it works</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
